@@ -4,7 +4,7 @@
 }
 
 body {
-    height: 100vh; /* when sections will be defined - delete this*/
+    /*height: 100vh; /* when sections will be defined - delete this*/
     display: flex;
     flex-direction: column;
     align-items: stretch;
@@ -19,12 +19,12 @@ body {
 
 .header {
     flex: 0 0 60px;
-    background-color: #faefc5;
+    background-color: rgb(250, 239, 205);
     font-size: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 14%;
+    padding: 0 20%;
 }
 
 .nav-bar {
@@ -32,14 +32,31 @@ body {
     gap: 24px;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.section {
+    flex: 0 1 300px;
+    background-color: gray;
+    padding: 0 20%;
+}
+
 .footer {
     flex: 0 0 80px;
-    background-color: #faefc5;
+    background-color: rgb(250, 239, 205);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #292929;
 }
 
 .content {
     flex: 1;
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 
 a {
