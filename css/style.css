@@ -22,6 +22,11 @@ ul {
     list-style: none;
 }
 
+hr {
+    width: 50%;
+    margin: 50px auto;
+}
+
 
 /* ----- HEADER CSS ----- */
 
@@ -58,13 +63,14 @@ ul {
 
 .section {
     flex: 0 1 300px;
-    background-color: gray;
     padding: 30px 20%;
     display: flex;
+    align-items: center;
+}
+
+.first-section {
     gap: 30px;
     justify-content: space-between;
-    align-items: center;
-    border: 1px solid black; /*  For debugging */
 }
 
 .first-section-image {
@@ -76,9 +82,58 @@ ul {
 .first-section-text-content {
     height: 80%;
     display: flex;
+    gap: 20px;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: flex-start;
+}
+
+.second-section {
+    justify-content: space-evenly;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.second-section-subsection {
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.second-section-image {
+    width: 200px;
+    height: auto;
+    border: 5px solid #3882F6;
+    border-radius: 20px;
+}
+
+.third-section {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.fourth-section{
+    justify-content: center;
+}
+
+.sign-up-box {
+    display: flex;
+    background-color: #3882F6;
+    width: 60%;
+    border-radius: 10px;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.sign-up-box-text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
 }
 
 
@@ -104,10 +159,42 @@ ul {
     font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+.bold-article-text {
+    font-size: 36px;
+    margin: 0 auto 50px auto;
+}
+
 .simple-text {
-    font-size: 18px;
+    font-size: 17px;
     color: rgb(20, 20, 20);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.quote-text {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    color: #1F2937;
+    align-self: flex-start;
+}
+
+.quote-author {
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+    align-self: flex-end;
+    margin: 0 20px;
+}
+
+.sign-up-box-header {
+    font-size: 16px;
+    font-weight: 700;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.sign-up-box-text {
+    font-size: 14px;
+    font-family: 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -115,10 +202,15 @@ ul {
 
 .sign-up {
     width: 100px;
-    height: 30px;
+    height: 60px;
     background-color: #3882F6;
     font-size: 17px;
     color: white;
     border: 0;
     border-radius: 5px;
+}
+
+.sign-up-inside-box{
+    border: 2px solid white;
+    height: 40px;
 }
